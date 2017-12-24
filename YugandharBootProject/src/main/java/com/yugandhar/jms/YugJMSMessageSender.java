@@ -102,11 +102,11 @@ public class YugJMSMessageSender {
 
 	public void sendMessageToQueue(TxnTransferObj txnTransferObj, String queueName) {
 		if(logger.isInfoEnabled()) {
-		logger.info("sending MessageToQueue: " + queueName + " #" + txnTransferObj);
+		logger.info("Sending MessageToQueue: " + queueName + " #" + txnTransferObj);
 		}
 		
 		if (mqReqResplogger.isDebugEnabled()) {
-			mqReqResplogger.debug("sending MessageToQueue: " + queueName + " RESPONSE MESSAGE: " + txnTransferObj);
+			mqReqResplogger.debug("Sending MessageToQueue: " + queueName + " RESPONSE MESSAGE: " + txnTransferObj);
 		}
 		
 		jmsTemplate.convertAndSend(queueName, txnTransferObj);

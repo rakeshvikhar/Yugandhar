@@ -22,7 +22,7 @@ public class EhcacheEventLogger implements CacheEventListener<Object, Object>{
 
 	@Override
 	public void onEvent(CacheEvent<? extends Object, ? extends Object> event) {
-		logger.info("Event: " + event.getType() + " Key: " + event.getKey() + " old value: " + event.getOldValue() + " new value: " + event.getNewValue());
+		logger.info("ehcahce Event: " + event.getType() + " Key: " + event.getKey() + " old value: " + event.getOldValue() + " new value: " + event.getNewValue());
 	}
 
 }
